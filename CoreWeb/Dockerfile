@@ -8,5 +8,5 @@ FROM microsoft/aspnetcore:2.0
 ARG source
 WORKDIR /app
 EXPOSE 80
-COPY ./out .
+COPY /app/bin .
 ENTRYPOINT ["dotnet", "CoreWeb.dll"]
